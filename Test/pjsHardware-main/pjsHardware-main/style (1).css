@@ -1,0 +1,323 @@
+
+/* Phillip */
+
+
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	height: 100%;
+	background-color: #ffffff;
+	color: #85859c;
+	font-family: tahoma, arial, sans-serif;
+	font-size: 15px;
+	text-align: center;
+}
+
+a {
+	color: #85859c;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #69699c;
+}
+
+span {
+	display: none;
+}
+
+img {
+	border: none;
+}
+
+p {
+	margin: 10px 0px 5px;
+	text-align: justify;
+	line-height: 14px;
+}
+
+.clearthis {
+	margin : 0px;
+	height : 1px;
+	clear : both;
+	float : none;
+	font-size : 1px;
+	line-height : 0px;
+	overflow : hidden;
+}
+
+#container {
+	margin: 0px auto;
+	width: 780px;
+	border-color: #9e9ec3;
+	border-width: 0px 1px 1px;
+	border-style: solid;
+}
+
+input {
+	padding-left: 2px;
+	background-color: #fff;
+	color: #85859c;
+	font-family: tahoma, arial, sans-serif;
+	font-size: 11px;
+}
+
+
+/* Page Header */
+
+
+
+
+/* Main Navigation Menu */
+
+
+
+/* Left Sidebar */
+
+#left_sidebar {
+	width: 129px;
+	float: left;
+	text-align: left;
+	color: #8989b6;
+}
+
+#left_sidebar a {
+	color: #8989b6;
+}
+
+#left_sidebar a:hover {
+	color: #75759c;
+}
+
+
+
+/* Left Sidebar: Newsletter Signup Box */
+
+
+/* Left Sidebar : Categories */
+
+#categories {
+	margin-bottom: 1px;
+	padding: 1px 1px 1px 0px;
+	border-color: black;
+	border-width: 1px 1px 1px 0px;
+	border-style: solid;
+	text-align: center;
+}
+
+#categories_header {
+	margin-bottom: 2px;
+	width: 127px;
+	height: 20px;
+	background-color: black;
+	overflow: hidden;
+}
+
+#categories_header h2 {
+	margin-top: 3px;
+	margin-left: 5px;
+	color: #fff;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+#categories ul {
+	margin: 0px auto;
+	width: 120px;
+	list-style-type: none;
+}
+
+#categories li {
+	width: 120px;
+	height: 21px;
+	list-style-type: none;
+	text-align: left;
+	border-bottom: black 1px solid;
+	float: left;
+}
+
+#categories li.last {
+	border: none;
+}
+
+#categories li a {
+	margin-top: 4px;
+	margin-left: 6px;
+	display: block;
+	color: #7575a9;
+	text-decoration: none;
+}
+
+#categories li a:hover {
+	color: #56567c;
+}
+
+
+/* Left Sidebar : Special Offer */
+
+
+
+/* Main Content Area */
+
+#main_content {
+	margin-right: 2px;
+	width: 644px;
+	text-align: center;
+	float: right;
+}
+
+#main_content .h_divider {
+	margin-bottom: 2px;
+	height: 1px;
+	background-color: #c2c2cd;
+	overflow: hidden;
+}
+
+
+/* New Item Description */
+
+#new_item {
+	margin: 0px auto 2px;
+	padding: 5px 10px;
+	width: 600px;
+	text-align: justify;
+}
+
+#new_item_header {
+	margin-top: 10px;
+	float: left;
+	width: 348px;
+}
+
+#new_item_header h1 {
+	color: #434367;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+#new_item_header h2 {
+	color: #434367;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: arial, tahoma, sans-serif;
+
+}
+
+#new_item_image {
+	width: 245px;
+	float: right;
+	overflow: hidden;
+	text-align: right;
+}
+
+#new_item_text {
+	float: left;
+	clear: left;
+	width: 348px;
+}
+
+#new_item_link {
+	float: left;
+	clear: left;
+	width: 348px;
+	font-weight: bold;
+	text-align: right;
+}
+
+#new_item_link a {
+	text-decoration: none;
+}
+
+
+/* Sub Items Descriptions */
+
+.sub_items {
+	margin-bottom: 2px;
+	margin-top: 5px;
+	width: 644px;
+	background: url('images/item_sub_background.gif') repeat-y 0px 0px;
+	text-align: justify;
+}
+
+.sub_left {
+	padding-left: 5px;
+	width: 300px;
+	float: left;
+}
+
+.sub_right {
+	padding-right: 15px;
+	width: 315px;
+	float: right;
+}
+
+.sub_items_header {
+	padding-left: 20px;
+	padding-top: 10px;
+	float: left;
+	width: 110px;
+}
+
+.sub_items_header h1 {
+	color: #434367;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: arial, tahoma, sans-serif;
+}
+
+.sub_items_header h2 {
+	color: #434367;
+	font-size: 12px;
+	font-weight: normal;
+	font-family: arial, tahoma, sans-serif;
+}
+
+.sub_items_image {
+	margin-top: 15px;
+	float: right;
+	text-align: right;
+}
+
+.sub_items_text {
+	padding-left: 20px;
+	float: left;
+	clear: left;
+	width: 110px;
+}
+
+.sub_items_cartinfo {
+	padding-top: 12px;
+	padding-left: 20px;
+	color: #820721;
+	font-family: arial, tahoma, sans-serif;
+	float: none;
+	clear: both;
+}
+
+.sub_items_cartinfo h2 {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.sub_items_cartinfo .price {
+	float: left;
+	text-align: left;
+}
+
+.sub_items_cartinfo .addtocart {
+	margin-top: 2px;
+	float: right;
+	width: 100px;
+	height: 12px;
+	text-align: left;
+	background: url('images/button_addtocart.gif') no-repeat 0% 0%;
+}
+
+
+/* Page Footer */
+

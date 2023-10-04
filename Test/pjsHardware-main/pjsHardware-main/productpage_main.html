@@ -1,0 +1,396 @@
+
+
+<!-- Jake -->
+
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Products</title>
+
+	<style>
+body {
+    overflow-x:hidden;
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.bg-text {
+  background-color: #000000; /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  list-style: none;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 20%;
+  padding: 20px;
+  text-align: center;
+  border: .5px solid #4C4E52;
+}
+
+h2 {
+
+  font-size: 30px;
+  padding: 10px 10px 10px 10px;
+  color: white;
+  text-align: center;
+
+}
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.navigation {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: sticky;
+			top: 1;
+			cursor: pointer;
+		}
+
+		.background {
+			background: #000;
+			background-blend-mode: darken;
+			background-size: cover;
+		}
+
+		.nav-list {
+			width: 70%;
+			display: flex;
+			align-items: center;
+			padding: 0px 0px 35px;
+		}
+
+		.logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+
+		.logo img {
+			width: 180px;
+			border-radius: 50px;
+		}
+
+		.nav-list li {
+			list-style: none;
+			padding: 25px 35px;
+		}
+
+		.nav-list li a {
+			text-decoration: none;
+			color: white;
+		}
+
+		.nav-list li a:hover {
+			color: grey;
+		}
+
+		.searchButton {
+			width: 30%;
+			text-align: right;
+			padding: 0px 10px 35px;
+		}
+
+		#search {
+			padding: 5px;
+			font-size: 17px;
+			border: 2px solid rgb(128, 128, 128);
+			border-radius: 9px;
+			padding: 0px 0px 5px;
+		}
+
+		.Homepage {
+
+  		    background-image: url("homepagepjs2.PNG");
+  		    filter: blur(10px);
+  		    height: 850px;
+			transform: scale(1.1);
+  		    background-position: center;
+  		    background-repeat: no-repeat;
+  		    background-size: cover;
+		}		    
+
+		.secondhalf {
+			width: 30%;
+		}
+
+		.secondhalf img {
+			width: 70%;
+			border: 4px solid white;
+			border-radius: 150px;
+			display: block;
+			margin: auto;
+		}
+
+		.text-big {
+			font-family: 'Piazzolla', serif;
+			font-weight: bold;
+			font-size: 35px;
+		}
+
+		.text-small {
+			font-size: 18px;
+		}
+
+		.btn {
+			padding: 8px 20px;
+			margin: 7px 0;
+			border: 2px solid white;
+			border-radius: 8px;
+			background: none;
+			color: white;
+			cursor: pointer;
+		}
+
+		.btn-sm {
+			padding: 6px 10px;
+			vertical-align: middle;
+		}
+
+		.section {
+			height: 400px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			max-width: 90%;
+			margin: auto;
+		}
+
+		.section-Left {
+			flex-direction: row-reverse;
+		}
+
+		.paras {
+			padding: 0px 65px;
+		}
+
+		.thumbnail img {
+			width: 250px;
+			border: 2px solid black;
+			border-radius: 26px;
+			margin-top: 19px;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		.text-footer {
+			text-align: center;
+			padding: 30px 0;
+			font-family: 'Ubuntu', sans-serif;
+			display: flex;
+			justify-content: center;
+			color: white;
+		}
+
+        .dropbtn {
+            padding: 8px 20px;
+			margin: 7px 0;
+			border-radius: 8px;
+			background: none;
+			color: white;
+			cursor: pointer;
+}
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: gray;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-footer {
+  padding: 70px 0;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.main-footer h1 {
+  font-size: 22px;
+  line-height: 117%;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.main-footer h2 {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.main-footer ul li a {
+  color: #ffffffcc;
+  text-decoration:none;
+}
+
+footer {
+  background-color: black;
+  border-top: 1px solid black;
+  font-size: 17px;
+  padding: 15px 5px;
+  color: #ffffff;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logoinfo p {
+  color: #ffffff;
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+.contact-details {
+  margin-top: 20px;
+}
+
+.contact-details li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.contact-details li a {
+  text-decoration:none;
+  color: #f1f1f1;
+}
+
+.contact-details .fa {
+  color: #f1f1f1;
+  margin-right: 10px;
+}
+
+.com ul li{
+  padding:5px 0;
+}
+
+@media only screen and (max-width: 749px) {
+  .main-footer {
+    padding:20px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
+    .info{
+      padding:20px 0;
+  }
+}
+
+	</style>
+</head>
+
+<body>
+	<nav class="navigation background">
+		<ul class="nav-list">
+			<div class="logo">
+				<img src= "logopjs.PNG">
+			</div>
+			<li><a href="http://jsphardware.store/homePage.html">Home</a></li>
+            <li><a href="http://jsphardware.store/productpage_main.html">Products</a></li>
+			<li><a href="http://jsphardware.store/login.php">Login</a></li>
+			<li><a href="http://jsphardware.store/checkout.html">Cart / Check Out</a></li>
+
+
+		</ul>
+		<div class="searchButton">
+			<input type="text" name="search" id="search">
+			<button class="btn btn-sm">Search</button>
+		</div>
+	</nav>
+ 
+      
+	<section class="Homepage">
+	</section>
+
+<div class="bg-text">
+  <h2>
+    <li><a href="http://jsphardware.store/dept.gpus.php">GPU's</a></li>
+    &nbsp;
+    <li><a href="http://jsphardware.store/dept.cpus.php">CPU's</a></li>
+    &nbsp;
+    <li><a href="http://jsphardware.store/dept.monitors.php">Monitors</a></li>
+    &nbsp;
+    <li><a href="http://jsphardware.store/dept.memory.php">Memory</a></li>
+    &nbsp;
+    <li><a href="http://jsphardware.store/dept.accessories.php">Accessories</a></li>
+</h2>
+
+</div>
+
+	<section id="footer">
+  <div class="main-footer">
+    <div class="logoinfo" data-aos="fade-up">
+      <h2>PJS Hardare</h2>
+      <div class="contact-details">
+        <h1>Contact Us</h1>
+        <li>
+          <div class="fa fa-phone"></div><a href="tel:864-999-9999">864-999-9999</a></li>
+        <li>
+          <div class="fa fa-envelope"></div><a href="mailto:support@pjshardware.com">support@pjshardware.com</a></li>
+        </li>
+    </div>
+  </div>
+  <div class="com " data-aos="fade-up">
+    <h1>About</h1>
+    <ul>
+		<li><a href="http://jsphardware.store/product_page1.html">Products</a></li>
+		<li><a href="http://jsphardware.store/checkout.html">Cart / Check Out</a></li>
+    </ul>
+  </div>
+  </div>
+<footer>© PJS Hardware Supply Co 2022 All Rights Reserved</footer>
+</section>
+</body>
+
+</html>
