@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAMS Travel Agency</title>
+    <style>
+        body {
+            font-family: 'Creepster', cursive, Arial, sans-serif;
+            background-color: #2e2e2e;
+            color: #f4a742;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navigation {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			position: sticky;
+			top: 1;
+			cursor: pointer;
+            padding: 0 20px;
+		}
+
+		.background {
+			background: #333333;
+			background-blend-mode: darken;
+			background-size: cover;
+		}
+
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            background-color: #1a1a1a;
+        }
+
+        .nav-list {
+			width: 70%;
+			display: flex;
+			align-items: center;
+			padding: 0px 0px 35px;
+		}
+
+        .logo {
+            flex: 1;
+		}
+
+		.logo img {
+			width: 180px;
+			border-radius: 50px;
+		}
+
+        nav a {
+            color: #f4e542;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+            border: 1px solid #f4e542;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #f4e542;
+            color: #333333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        img.spot {
+            max-width: 100%;
+            border: 5px solid #f4e542;
+            margin-bottom: 20px;
+        }
+        .contact-us {
+            background-color: #1a1a1a;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        h1, h2, .contact-info {
+            font-family: 'Creepster', cursive;
+        }
+
+        .contact-info {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-info h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }    
+
+        .title-container {
+            flex: 10;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navigation background">
+            <div class="logo">
+               <img src="JTALogo2.jpeg">
+            </div>
+            <div class="title-container">
+                <h1>JAMS Travel Agency</h1>
+                <h4>Your Spooky Travel Destination</h4>
+            </div>
+        </nav>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="packages.html">Packages</a>
+        <a href="cart.html">Shopping Cart</a>
+    </nav>
+
+    <div class="container">
+        <!-- You can replace with your own images -->
+        <img src="STAugestine.jpg" alt="Spooky Destination 1" class="spot">
+        <img src="Paris (Custom).jfif" alt="Spooky Destination 2" class="spot">
+    </div>
+
+    <div class="contact-us">
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Email: example@email.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: IDK SOME RANDO ADDRESS</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 JAMS Travel Agency</p>
+    </footer>
+
+</body>
+
+</html>
