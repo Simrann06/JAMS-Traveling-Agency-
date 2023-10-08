@@ -15,12 +15,6 @@
             padding: 0;
         }
 
-        header {
-            background-color: #333333;
-            padding: 10px;
-            text-align: center;
-        }
-
         .navigation {
 			display: flex;
 			align-items: center;
@@ -31,11 +25,7 @@
             padding: 0 20px;
 		}
 
-		.background {
-			background: #333333;
-			background-blend-mode: darken;
-			background-size: cover;
-		}
+
 
         nav {
             display: flex;
@@ -86,33 +76,13 @@
             border: 5px solid #f4e542;
             margin-bottom: 20px;
         }
-        .contact-us {
-            background-color: #1a1a1a;
-            padding: 20px 0;
-            margin-top: 50px;
-        }
 
         h1, h2, .contact-info {
             font-family: 'Creepster', cursive;
         }
 
-        .contact-info {
-            max-width: 1000px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .contact-info h2 {
-            font-size: 24px;
-            margin-bottom: 15px;
-        }
-
-        .contact-info p {
-            margin-bottom: 10px;
-        }    
-
         .title-container {
-            flex: 30;
+            flex: 10;
             text-align: center;
         }
 
@@ -140,20 +110,77 @@
         <a href="customerLogin.html">Customer Portal</a>
     </nav>
 
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAMS Travel Agency - Customer Login</title>
+    <style>
+
+
+        .login-form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #f4e542;
+            border-radius: 5px;
+        }
+
+        .login-form button {
+            background-color: #f4e542;
+            color: #333333;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Your header code here -->
+    </header>
+
+    <nav>
+        <!-- Your navigation links here -->
+    </nav>
+
     <div class="container">
-        <!-- You can replace with your own images -->
-        <img src="STAugestine.jpg" alt="Spooky Destination 1" class="spot">
-        <img src="Paris (Custom).jfif" alt="Spooky Destination 2" class="spot">
+        <div class="login-form">
+            <h2>Customer Portal</h2>
+            <form action="process_login.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
     </div>
 
     <div class="contact-us">
-        <div class="contact-info">
-            <h2>Contact Us</h2>
-            <p>Email: example@email.com</p>
-            <p>Phone: (123) 456-7890</p>
-            <p>Address: IDK SOME RANDO ADDRESS</p>
-        </div>
+        <!-- Your contact information here -->
     </div>
+
+    <footer>
+        <!-- Your footer content here -->
+    </footer>
+</body>
+
+</html>
+
 
     <footer>
         <p>&copy; 2023 JAMS Travel Agency</p>
