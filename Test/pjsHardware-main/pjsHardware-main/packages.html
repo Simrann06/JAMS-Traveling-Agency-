@@ -5,8 +5,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JAMS Travel Agency</title>
+    <title>Packages - JAMS Travel Agency</title>
     <style>
+
         body {
             font-family: 'Creepster', cursive, Arial, sans-serif;
             background-color: #2e2e2e;
@@ -14,11 +15,25 @@
             margin: 0;
             padding: 0;
         }
-
-        header {
+        
+        .package {
             background-color: #333333;
-            padding: 10px;
-            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 3px solid #f4e542;
+            border-radius: 10px;
+            display: flex;
+            gap: 20px; 
+        }
+
+        .package img {
+            width: 300px;
+            border: 5px solid #f4e542;
+            border-radius: 10px;
+        }
+
+        .package-description {
+            flex: 1;
         }
 
         .navigation {
@@ -29,12 +44,6 @@
 			top: 1;
 			cursor: pointer;
             padding: 0 20px;
-		}
-
-		.background {
-			background: #333333;
-			background-blend-mode: darken;
-			background-size: cover;
 		}
 
         nav {
@@ -55,7 +64,7 @@
             flex: 1;
 		}
 
-		.logo img {
+        .logo img {
 			width: 180px;
 			border-radius: 50px;
 		}
@@ -75,17 +84,18 @@
             color: #333333;
         }
 
+
+        .title-container {
+            flex: 15;
+            text-align: center;
+        }
+
         .container {
             max-width: 1000px;
             margin: 50px auto;
             text-align: center;
         }
 
-        img.spot {
-            max-width: 100%;
-            border: 5px solid #f4e542;
-            margin-bottom: 20px;
-        }
         .contact-us {
             background-color: #1a1a1a;
             padding: 20px 0;
@@ -110,40 +120,50 @@
         .contact-info p {
             margin-bottom: 10px;
         }    
-
-        .title-container {
-            flex: 15;
-            text-align: center;
-        }
-
     </style>
 </head>
 
 <body>
-
     <header>
-        <nav class="navigation background">
-            <div class="logo">
-               <img src="JTALogo2.jpeg">
-            </div>
-            <div class="title-container">
-                <h1>JAMS Travel Agency</h1>
-                <h4>Your Spooky Travel Destination</h4>
-            </div>
+        <header>
+            <nav class="navigation background">
+                <div class="logo">
+                   <img src="JTALogo2.jpeg">
+                </div>
+                <div class="title-container">
+                    <h1>JAMS Travel Agency</h1>
+                    <h4>Your Spooky Travel Destination</h4>
+                </div>
+            </nav>
+        </header>
+    
+        <nav>
+            <a href="HomePage2.html">Home</a>
+            <a href="packages.html">Packages</a>
+            <a href="cart.html">Shopping Cart</a>
+            <a href="customerLogin.html">Customer Portal</a>
         </nav>
     </header>
 
-    <nav>
-        <a href="HomePage2.html">Home</a>
-        <a href="packages.html">Packages</a>
-        <a href="cart.html">Shopping Cart</a>
-        <a href="customerLogin.html">Customer Portal</a>
-    </nav>
-
     <div class="container">
-        <!-- You can replace with your own images -->
-        <img src="STAugestine.jpg" alt="Spooky Destination 1" class="spot">
-        <img src="Paris (Custom).jfif" alt="Spooky Destination 2" class="spot">
+        <h2>Our Spooky Packages</h2>
+
+        <div class="package">
+            <img src="spooky_destination1.jpg" alt="Spooky Destination 1">
+            <div class="package-description">
+                <h3>Haunted Castle Tour</h3>
+                <p>Visit the most haunted castles in Europe and experience a journey filled with tales of ghosts, ghouls, and ancient legends.</p>
+            </div>
+        </div>
+
+        <div class="package">
+            <img src="spooky_destination2.jpg" alt="Spooky Destination 2">
+            <div class="package-description">
+                <h3>Ghost Town Expedition</h3>
+                <p>Travel to the eeriest abandoned towns and discover the mysteries they hold. Be prepared for some unexpected encounters!</p>
+            </div>
+        </div>
+
     </div>
 
     <div class="contact-us">
@@ -152,9 +172,9 @@
             <p>Email: example@email.com</p>
             <p>Phone: (123) 456-7890</p>
             <p>Address: IDK SOME RANDO ADDRESS</p>
-            <p>&copy; 2023 JAMS Travel Agency</p>
         </div>
     </div>
+
 </body>
 
 </html>
