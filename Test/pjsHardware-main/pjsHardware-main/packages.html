@@ -71,12 +71,6 @@
             flex: 0 0 auto;
 		}
 
-        .accountImg {
-            display: block;
-            width: 180px;
-            border-radius: 50px;
-        }
-
         .logo img {
 			display: block;
             width: 180px;
@@ -103,7 +97,7 @@
         .title-container {
             flex: 15;
             text-align: center;
-            position: relative; right: 85px;
+            position: relative; right: 25px;
         }
 
         .container {
@@ -139,7 +133,7 @@
         }   
         
         .Homepage {
-            background-image: url("HalloweenBackground2.jpg");
+            background-image: url("HalloweenBackground1.jpg");
             height: 100%;
             transform: scale(1);
             background-position: center;
@@ -147,31 +141,41 @@
             background-size: cover;
         }	
 
+        .account {
+            flex: 1;
+        }
+
+        .account img {
+            width: 75px;
+			border-radius: 20px;
+            padding-right: 25px;
+        }
+
     </style>
 </head>
 
 <body>
     <header>
-            <nav class="navigation background">
-                <div class="logo">
-                   <img src="JTALogo2.jpeg">
-                </div>
-                <div class="title-container">
-                    <h1>JAMS Travel Agency</h1>
-                    <h4>Your Spooky Travel Destination</h4>
-                </div>
-                <div class="accountImg">
-                    <img src="AccountLogo.png">
-                </div>
-            </nav>
-    
-        <nav>
-            <a href="HomePage2.html">Home</a>
-            <a href="packages.html">Packages</a>
-            <a href="cart.html">Shopping Cart</a>
-            <a href="customerLogin.html">Customer Portal</a>
+        <nav class="navigation background">
+            <div class="logo">
+               <img src="JTALogo2.jpeg">
+            </div>
+            <div class="title-container">
+                <h1>JAMS Travel Agency</h1>
+                <h4>Your Spooky Travel Destination</h4>
+            </div>
+            <div class="account">
+                <img src="AccountLogo.png">
+            </div>
         </nav>
     </header>
+
+    <nav>
+        <a href="HomePage2.html">Home</a>
+        <a href="packages.html">Packages</a>
+        <a href="cart.html">Shopping Cart</a>
+        <a href="customerLogin.html">Customer Portal</a>
+    </nav>
 
     <section class="Homepage"> 
 
