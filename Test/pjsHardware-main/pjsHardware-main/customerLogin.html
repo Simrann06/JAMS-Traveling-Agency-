@@ -55,12 +55,12 @@
 		}
 
         nav a {
-            color: #f4e542;
+            color: #f4a742;
             text-decoration: none;
             margin: 0 15px;
             padding: 5px 10px;
-            border: 1px solid #f4e542;
-            border-radius: 5px;
+            border: 1px solid #f4a742;
+            border-radius: 50px;
             transition: background-color 0.3s;
         }
 
@@ -71,8 +71,9 @@
 
         .container {
             max-width: 1000px;
-            margin: 50px auto;
+            margin: auto;
             text-align: center;
+            padding-top: 30px;
         }
 
         img.spot {
@@ -86,8 +87,9 @@
         }
 
         .title-container {
-            flex: 10;
+            flex: 15;
             text-align: center;
+            position: relative; right: 85px;
         }
 
         .contact-us {
@@ -113,7 +115,16 @@
 
         .contact-info p {
             margin-bottom: 10px;
-        }    
+        }  
+        
+        .Homepage {
+            background-image: url("HalloweenBackground2.jpg");
+            height: 100%;
+            transform: scale(1);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }	
 
     </style>
 </head>
@@ -183,6 +194,8 @@
     <nav>
         <!-- Your navigation links here -->
     </nav>
+
+    <section class="Homepage"> 
 
     <div class="container">
         <div class="login-form">

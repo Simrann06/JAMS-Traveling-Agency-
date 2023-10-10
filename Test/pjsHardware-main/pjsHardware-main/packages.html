@@ -23,7 +23,6 @@
             padding: 20px;
             border: 3px solid #f4e542;
             border-radius: 10px;
-            display: flex;
             gap: 20px; 
         }
 
@@ -79,14 +78,15 @@
 		}
 
         nav a {
-            color: #f4e542;
+            color: #f4a742;
             text-decoration: none;
             margin: 0 15px;
             padding: 5px 10px;
-            border: 1px solid #f4e542;
-            border-radius: 5px;
+            border: 1px solid #f4a742;
+            border-radius: 50px;
             transition: background-color 0.3s;
         }
+
 
         nav a:hover {
             background-color: #f4e542;
@@ -95,14 +95,16 @@
 
 
         .title-container {
-            flex: 1;
+            flex: 15;
             text-align: center;
+            position: relative; right: 85px;
         }
 
         .container {
-            max-width: 1000px;
-            margin: 50px auto;
+            max-width: 500px;
+            margin: auto;
             text-align: center;
+            padding-top: 25px;
         }
 
         .contact-us {
@@ -128,7 +130,17 @@
 
         .contact-info p {
             margin-bottom: 10px;
-        }    
+        }   
+        
+        .Homepage {
+            background-image: url("HalloweenBackground2.jpg");
+            height: 100%;
+            transform: scale(1);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }	
+
     </style>
 </head>
 
@@ -151,6 +163,8 @@
             <a href="customerLogin.html">Customer Portal</a>
         </nav>
     </header>
+
+    <section class="Homepage"> 
 
     <div class="container">
         <h2>Our Spooky Packages</h2>
