@@ -42,6 +42,7 @@
             justify-content: center;
             padding: 10px 0;
             background-color: #1a1a1a;
+
         }
 
         .nav-list {
@@ -56,7 +57,7 @@
 		}
 
 		.logo img {
-			width: 180px;
+			width: 100px;
 			border-radius: 20px;
 		}
 
@@ -68,11 +69,6 @@
             border: 1px solid #f4a742;
             border-radius: 50px;
             transition: background-color 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #f4a742;
-            color: #333333;
         }
 
         .container {
@@ -88,7 +84,7 @@
             margin-bottom: 50px;
         }
         .contact-us {
-            background-color: #1a1a1a;
+            background-color: #333333;
             padding: 20px 0;
             margin-top: 50px;
         }
@@ -115,17 +111,27 @@
         .title-container {
             flex: 15;
             text-align: center;
-            position: relative; right: 85px;
+            position: relative; right: 25px;
         }
 
         .Homepage {
-            background-image: url("HalloweenBackground2.jpg");
+            background-image: url("HalloweenBackground1.jpg");
             height: 100%;
             transform: scale(1);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-        }		 
+        }	
+        
+        .account {
+            flex: 1;
+        }
+
+        .account img {
+            width: 75px;
+			border-radius: 20px;
+            padding-right: 25px;
+        }
 
     </style>
 </head>
@@ -140,6 +146,9 @@
             <div class="title-container">
                 <h1>JAMS Travel Agency</h1>
                 <h4>Your Spooky Travel Destination</h4>
+            </div>
+            <div class="account">
+                <img src="AccountLogo.png">
             </div>
         </nav>
     </header>
