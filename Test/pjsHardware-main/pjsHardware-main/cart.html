@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JAMS Travel Agency</title>
+
     <style>
         body {
             font-family: 'Creepster', cursive, Arial, sans-serif;
@@ -45,13 +46,6 @@
 
         }
 
-        .nav-list {
-			width: 70%;
-			display: flex;
-			align-items: center;
-			padding: 0px 0px 35px;
-		}
-
         .logo {
             flex: 1;
 		}
@@ -78,12 +72,18 @@
             padding-top: 25px;
         }
 
+        .container2 {
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+        }
+
         img.spot {
             max-width: 100%;
             border: 5px solid #f4a742;
             margin-bottom: 50px;
         }
-        
+
         .contact-us {
             background-color: #333333;
             padding: 20px 0;
@@ -135,8 +135,29 @@
             padding-right: 25px;
         }
 
+        .shopping {
+            background-color: #333333;
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 3px solid #f4e542;
+            border-radius: 10px;
+            gap: 20px; 
+        }
+
+        .shopping2 {
+            background-color: #1a1a1a;
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 3px solid #f4e542;
+            border-radius: 10px;
+            gap: 20px; 
+        }
+
+        .shopping-description {
+            font-family: 'Lato', sans-serif;
+            flex: 1;
+        }
     </style>
-</head>
 
 <body>
     <header>
@@ -161,12 +182,20 @@
         <a href="customerLogin.html">Customer Portal</a>
     </nav>
 
-    <section class="Homepage"> 
+    <section class="Homepage">
 
-    <div class="container">
-        <img src="STAugestine.jpg" alt="Spooky Destination 1" class="spot">
-        <img src="Paris (Custom).jfif" alt="Spooky Destination 2" class="spot">
-    </div>
+        <div class="container">
+            <div class="container2">            
+                <div class="shopping">
+                    <h1>Your cart</h1>
+                    <div class="shopping2">                      
+                    <div class="shopping-description">
+                        <p>Test</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <nav class="contact-us">
         <div class="contact-info">
