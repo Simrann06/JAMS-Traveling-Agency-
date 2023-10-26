@@ -72,14 +72,16 @@
         }
 
         .container {
-            max-width: 500px;
+            max-width: 1500px;
             margin: auto;
             text-align: center;
             padding-top: 25px;
         }
 
         img.spot {
-            max-width: 100%;
+            width: 600px;  
+            height: 350px; 
+            object-fit: cover; 
             border: 5px solid #f4a742;
             margin-bottom: 50px;
         }
@@ -135,6 +137,62 @@
             padding-right: 25px;
         }
 
+        .tagline, .about, .cta {
+            padding: 20px 0;
+            font-size: 35px;
+        }
+
+        .tagline h2 {
+            font-size: 50px; /* Adjust the size as needed */
+        }
+
+        .tagline p {
+            font-size: 25px;
+        }
+
+        .destination-grid, .reviews-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        figure {
+            text-align: center;
+        }
+
+        figcaption {
+            font-size: 35px;
+            margin-top: 10px;
+            color: #f4a742;
+        }
+
+        blockquote {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        cite {
+            display: block;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #f4a742;
+            color: #2e2e2e;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #e49635;
+        }
+
     </style>
 </head>
 
@@ -163,20 +221,64 @@
 
     <section class="Homepage"> 
 
-    <div class="container">
-        <img src="STAugestine.jpg" alt="Spooky Destination 1" class="spot">
-        <img src="Paris (Custom).jfif" alt="Spooky Destination 2" class="spot">
-    </div>
+   <div class="container tagline">
+    <h2>Embark on the Most Haunting Adventures!</h2>
+    <p>Discover the world's spookiest destinations with JAMS.</p>
+</div>
 
-    <nav class="contact-us">
-        <div class="contact-info">
-            <h2>Contact Us</h2>
-            <p>Email: example@email.com</p>
-            <p>Phone: (123) 456-7890</p>
-            <p>Address: IDK SOME RANDO ADDRESS</p>
-            <p>&copy; 2023 JAMS Travel Agency</p>
-        </div>
-    </nav>
+<div class="container about">
+    <h3>About JAMS Travel Agency</h3>
+    <p>We specialize in curating the most thrilling and spine-chilling travel experiences. With us, every journey becomes a haunting tale to tell!</p>
+</div>
+
+<div class="container featured-destinations">
+    <h3>Featured Spooky Destinations</h3>
+    <div class="destination-grid">
+        <figure>
+            <img src="STAugestine.jpg" alt="Spooky Destination 1" class="spot">
+            <figcaption>St. Augustine - The Haunted City</figcaption>
+        </figure>
+        <figure>
+            <img src="Paris (Custom).jfif" alt="Spooky Destination 2" class="spot">
+            <figcaption>Paris - Ghosts of the Catacombs</figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="container customer-reviews">
+    <h3>What Our Travelers Say</h3>
+    <div class="reviews-grid">
+        <blockquote>
+            "Our trip to St. Augustine with JAMS was a surreal experience! The haunted attractions were genuinely spine-tingling. 
+            As for the hotel, it seamlessly combined historic charm with modern comforts. The candlelit ghost tour was an absolute 
+            highlight, and the guide's tales were hauntingly memorable. I'd give this package a solid 5 stars!"
+            <cite>- Lucy M.</cite>
+        </blockquote>
+        <blockquote>
+            "Paris through the lens of JAMS is unlike anything I'd imagined. The Catacombs tour was deeply eerie, and our guide seemed
+             to know every dark tale of the city. The hotel we stayed at was a perfect blend of luxury and old-world mystery, making our nights 
+             as intriguing as our days. The attention to detail and the overall experience merits a resounding 5 stars!"
+            <cite>- Mark S.</cite>
+        </blockquote>
+    </div>
+</div>
+
+<div class="container cta">
+    <h3>Ready for a spine-chilling adventure?</h3>
+    <a href="packages.html" class="cta-button">Explore Packages</a>
+</div>
+
+<div class="contact-us">
+    <div class="contact-info">
+        <h2>Contact Us</h2>
+        <p>Email: example@email.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: IDK SOME RANDO ADDRESS</p>
+        <p>&copy; 2023 JAMS Travel Agency</p>
+    </div>
+</div>
+</nav>
+</section>
 </body>
 
 </html>
