@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
@@ -101,13 +100,14 @@
         }
 
         .container {
-            max-width: 500px;
+            max-width: 2500px; 
             margin: auto;
             text-align: center;
-            padding-top: 25px;
+            padding: 25px;
         }
 
         .contact-us {
+            width: 100%;
             background-color: #1a1a1a;
             padding: 20px 0;
             margin-top: 50px;
@@ -118,7 +118,7 @@
         }
 
         .contact-info {
-            max-width: 1000px;
+            max-width: 100%;
             margin: 0 auto;
             text-align: center;
         }
@@ -129,6 +129,7 @@
         }
 
         .contact-info p {
+            width: 100%;
             margin-bottom: 10px;
         }   
         
@@ -150,6 +151,46 @@
 			border-radius: 20px;
             padding-right: 25px;
         }
+
+        .packages-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); 
+          gap: 20px;
+          padding: 20px;
+        }
+
+        .package {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: #424242;
+            padding: 20px;
+            border: 2px solid #f4e542;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .package:hover {
+            transform: translateY(-5px);
+            border-color: #f4a742;
+        }
+
+        .package img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .package h3 {
+            font-family: 'Creepster', cursive;
+            margin-bottom: 10px;
+        }
+
+        .package p {
+            font-family: 'Lato', sans-serif;
+        }
+
 
     </style>
 </head>
@@ -178,9 +219,9 @@
     </nav>
 
     <section class="Homepage"> 
-
-    <div class="container">
-        <h2>Our Spooky Packages</h2>
+        <div class="container">
+            <h2>Our Spooky Packages</h2>
+            <div class="packages-container">
         <div class="package">
             <img src="Paris (Custom).jfif" alt="Spooky Destination 1">
             <div class="package-description">
@@ -212,18 +253,32 @@
             </div>
         </div>
 
-    </div>
+        <div class="package">
+            <img src="placeholder3.jpg" alt="Mystery Manor">
+            <h3>Mystery Manor Escape</h3>
+            <p>Test your wits in the Mystery Manor, where every room whispers secrets of a bygone era. Engage in an escape room experience like no other, surrounded by the manor's ghostly inhabitants.</p>
+        </div>
 
-    <div class="contact-us">
-        <div class="contact-info">
-            <h2>Contact Us</h2>
-            <p>Email: example@email.com</p>
-            <p>Phone: (123) 456-7890</p>
-            <p>Address: IDK SOME RANDO ADDRESS</p>
-            <p>&copy; 2023 JAMS Travel Agency</p>
+        <div class="package">
+            <img src="placeholder4.jpg" alt="Enchanted Forest">
+            <h3>Enchanted Forest Trails</h3>
+            <p>Wander through the Enchanted Forest, where the line between the natural and the supernatural blurs. Beware the will-o'-the-wisps leading you to the unknown.</p>
         </div>
     </div>
-
+    </div>
+   
 </body>
+
+ <Footer>
+<div class="contact-us">
+    <div class="contact-info">
+        <h2>Contact Us</h2>
+        <p>Email: example@email.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: IDK SOME RANDO ADDRESS</p>
+        <p>&copy; 2023 JAMS Travel Agency</p>
+     </div>
+</div>
+</Footer>
 
 </html>
