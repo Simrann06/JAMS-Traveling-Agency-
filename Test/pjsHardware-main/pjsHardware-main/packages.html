@@ -177,10 +177,14 @@
         }
 
         .package img {
-            width: 100%;
+            width: 100%; 
+            height: 200px; 
+            object-fit: cover; 
+            border: 5px solid #f4e542;
             border-radius: 10px;
             margin-bottom: 20px;
         }
+
 
         .package h3 {
             font-family: 'Creepster', cursive;
@@ -189,6 +193,51 @@
 
         .package p {
             font-family: 'Lato', sans-serif;
+        }
+
+        .add-to-cart-btn {
+            font-family: 'Lato', sans-serif;
+            background-color: #f4e542;
+            color: #333333;
+            border: none;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 10px; 
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            border-radius: 5px;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: #f4a742;
+            transform: scale(1.05); 
+        }
+
+        nav a:not(.account-link) {
+            color: #f4a742;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+            border: 1px solid #f4a742;
+            border-radius: 50px;
+            transition: background-color 0.3s;
+        }
+
+        .account-link,
+        .account-link:hover,
+        .account-link:active {
+            padding: 0;
+            border: none;
+            background: none;
+            color: inherit;
+            border-radius: 0;
+            transition: none;
+        }
+
+        nav a.account-link:hover {
+            background-color: transparent;
+            color: inherit;
         }
 
 
@@ -206,7 +255,7 @@
                 <h4>Your Spooky Travel Destination</h4>
             </div>
             <div class="account">
-                <img src="AccountLogo.png">
+                <a href="customerLogin.html" class="account-link"><img src="AccountLogo.png" alt="Account"></a>
             </div>
         </nav>
     </header>
@@ -215,7 +264,6 @@
         <a href="HomePage2.html">Home</a>
         <a href="packages.html">Packages</a>
         <a href="cart.html">Shopping Cart</a>
-        <a href="customerLogin.html">Customer Portal</a>
     </nav>
 
     <section class="Homepage"> 
@@ -234,6 +282,8 @@
                     This immersive experience is a chilling reminder of the city's layered past, 
                     offering a perspective of Paris that few dare to explore. Book now, if you dare, 
                     and unearth the mysteries that lie beneath the City of Lights.</p>
+
+                    <button type="button" class="add-to-cart-btn">Add to Cart</button>
             </div>
         </div>
 
@@ -250,6 +300,8 @@
                     hauntings that have made St. Augustine a must-visit for ghost enthusiasts. 
                     Brace yourself for an unforgettable night where history comes alive, and 
                     the past's restless spirits await. Join us... if you're brave enough!</p>
+
+                    <button type="button" class="add-to-cart-btn">Add to Cart</button>
             </div>
         </div>
 
@@ -261,12 +313,14 @@
                 legends. This exclusive journey takes you through the corridors of what is popularly 
                 known as 'Dracula's Castle,' a fortress steeped in history and draped in the enigma 
                 of Count Vlad Tepes, the impaler who inspired Bram Stoker's legendary vampire. By day,
-                 you'll explore the castle's grand rooms, secret passages, and the hauntingly 
-                 beautiful surrounding countryside. As dusk falls, brace yourself for a special 
-                 candlelit tour, where the tales of bygone times come to life, sending chills down 
-                 your spine. This package isn't just a tour; it's an immersive experience into a world
-                  where history meets folklore, and stories of the supernatural feel all too real. 
-                  Book now for a spine-tingling adventure at Bran Castle.
+                you'll explore the castle's grand rooms, secret passages, and the hauntingly 
+                beautiful surrounding countryside. As dusk falls, brace yourself for a special 
+                candlelit tour, where the tales of bygone times come to life, sending chills down 
+                your spine. This package isn't just a tour; it's an immersive experience into a world
+                where history meets folklore, and stories of the supernatural feel all too real. 
+                Book now for a spine-tingling adventure at Bran Castle.</p>
+
+                <button type="button" class="add-to-cart-btn">Add to Cart</button>
             </div>
 
         <div class="package">
@@ -282,7 +336,9 @@
                  and centuries-old cemeteries. Beyond the supernatural, indulge in the local Creole 
                  cuisine, sip on a Sazerac, and revel in the vibrant culture of Mardi Gras City. Our 
                  package offers a perfect blend of guided adventure and leisurely luxury, ensuring 
-                 that your experience in The Big Easy is as enchanting as it is unforgettable
+                 that your experience in The Big Easy is as enchanting as it is unforgettable.</p>
+
+                 <button type="button" class="add-to-cart-btn">Add to Cart</button>
             </div>
     </div>
     </div>

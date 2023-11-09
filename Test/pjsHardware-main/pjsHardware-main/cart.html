@@ -157,6 +157,32 @@
             font-family: 'Lato', sans-serif;
             flex: 1;
         }
+
+        nav a:not(.account-link) {
+            color: #f4a742;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+            border: 1px solid #f4a742;
+            border-radius: 50px;
+            transition: background-color 0.3s;
+        }
+
+        .account-link,
+        .account-link:hover,
+        .account-link:active {
+            padding: 0;
+            border: none;
+            background: none;
+            color: inherit;
+            border-radius: 0;
+            transition: none;
+        }
+
+        nav a.account-link:hover {
+            background-color: transparent;
+            color: inherit;
+        }
     </style>
 
 <body>
@@ -170,7 +196,7 @@
                 <h4>Your Spooky Travel Destination</h4>
             </div>
             <div class="account">
-                <img src="AccountLogo.png">
+                <a href="customerLogin.html" class="account-link"><img src="AccountLogo.png" alt="Account"></a>
             </div>
         </nav>
     </header>
@@ -179,7 +205,6 @@
         <a href="HomePage2.html">Home</a>
         <a href="packages.html">Packages</a>
         <a href="cart.html">Shopping Cart</a>
-        <a href="customerLogin.html">Customer Portal</a>
     </nav>
 
     <section class="Homepage">
