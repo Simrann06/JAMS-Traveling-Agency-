@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Authentication failed - redirect back to the login page with an error message
-    header('Location: customerLogin.html?error=1');
+    header('Location: Test/pjsHardware-main/pjsHardware-main/customerLogin.html');
     exit();
 }
 
