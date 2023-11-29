@@ -1,13 +1,4 @@
 <!DOCTYPE html>
-
-<? php
-session_start();
-
-    include ("config.php");
-    include ("functions.php");
-
-
-?> 
 <html lang="en">
 
 <head>
@@ -240,16 +231,17 @@ session_start();
     </header>
 
     <nav>
-    <a href="signup.html">signup</a>
+        <!-- Your navigation links here -->
     </nav>
 
     <section class="Homepage"> 
 
             <section class="signup-form">
                 <h2>Customer Portal</h2>
-                <form action ="signup.html" method = "post">
+                <form action ="signup.inc.php" method = "post">
                     <input type ="text" name = "username" placeholder = "Username"><br><br>
                     <input type ="password" name = "password" placeholder = "Password"><br><br>
+                    <input type ="text" name = "email" placeholder = "E-Mail"><br><br>
                    <!-- <input type="password" id="password" name="password" required><br> -->
     
                     <button type = "Submit" name = "submit">Sign Up</button>
