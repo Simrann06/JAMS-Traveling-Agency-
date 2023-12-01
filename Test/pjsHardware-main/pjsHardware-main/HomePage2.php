@@ -242,7 +242,7 @@
     </header>
 
     <nav>
-        <a href="HomePage2.html">Home</a>
+        <a href="HomePage2.php">Home</a>
         <a href="packages.html">Packages</a>
         <a href="cart.html">Shopping Cart</a>
     </nav>
