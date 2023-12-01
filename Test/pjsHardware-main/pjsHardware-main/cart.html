@@ -183,6 +183,43 @@
             background-color: transparent;
             color: inherit;
         }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        form h2 {
+            margin-top: 30px; 
+        }
+
+        label {
+            display: block; 
+            margin-bottom: 5px; 
+            font-size: 1.2em; 
+        }
+
+        input[type="text"],
+        input[type="submit"] {
+            width: 100%; 
+            padding: 10px; 
+            margin-bottom: 10px; 
+            border-radius: 5px; 
+            border: 1px solid #f4a742; 
+            background-color: #fff; 
+            color: #333; 
+            font-size: 1.1em; 
+        }
+
+        input[type="submit"] {
+            background-color: #f4a742; 
+            color: #333333;
+            cursor: pointer; 
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #f4e542; 
+        }
     </style>
 
 <body>
@@ -208,19 +245,58 @@
     </nav>
 
     <section class="Homepage">
-
         <div class="container">
-            <div class="container2">            
-                <div class="shopping">
-                    <h1>Your cart</h1>
-                    <div class="shopping2">                      
-                    <div class="shopping-description">
-                        <p>Test</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="shopping">
+                <h1>Your Cart</h1>
+               
             </div>
+    
+            <form action="process_checkout.php" method="post">
+                <h2>Billing Information</h2>
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="zip">ZIP / Postal Code:</label>
+                    <input type="text" id="zip" name="zip" required>
+                </div>
+    
+                <h2>Payment Information</h2>
+                <div class="form-group">
+                    <label for="cardname">Name on Card:</label>
+                    <input type="text" id="cardname" name="cardname" required>
+                </div>
+                <div class="form-group">
+                    <label for="cardnumber">Credit Card Number:</label>
+                    <input type="text" id="cardnumber" name="cardnumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="expmonth">Exp Month:</label>
+                    <input type="text" id="expmonth" name="expmonth" required>
+                </div>
+                <div class="form-group">
+                    <label for="expyear">Exp Year:</label>
+                    <input type="text" id="expyear" name="expyear" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" required>
+                </div>
+    
+                <input type="submit" value="Checkout">
+            </form>
         </div>
+    </section>
+    
 
     <nav class="contact-us">
         <div class="contact-info">
