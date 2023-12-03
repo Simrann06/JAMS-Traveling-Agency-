@@ -245,6 +245,7 @@
         <a href="HomePage2.php">Home</a>
         <a href="packages.html">Packages</a>
         <a href="cart.html">Shopping Cart</a>
+        <a href="http://127.0.0.1:7860">ChatBot Helper</a>
     </nav>
 
     <section class="Homepage"> 
