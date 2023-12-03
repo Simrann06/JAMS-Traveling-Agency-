@@ -43,7 +43,6 @@
             justify-content: center;
             padding: 10px 0;
             background-color: #1a1a1a;
-
         }
 
         .logo {
@@ -158,6 +157,19 @@
             flex: 1;
         }
 
+        .cart-item {
+            margin-bottom: 20px;
+        }
+
+        .cart-item p {
+            margin: 5px 0;
+        }
+
+        .cart-total {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
         nav a:not(.account-link) {
             color: #f4a742;
             text-decoration: none;
@@ -221,6 +233,7 @@
             background-color: #f4e542; 
         }
     </style>
+</head>
 
 <body>
     <header>
@@ -242,58 +255,20 @@
         <a href="HomePage2.php">Home</a>
         <a href="packages.html">Packages</a>
         <a href="cart.html">Shopping Cart</a>
+        <a href="http://127.0.0.1:7860">ChatBot Helper</a>
+
     </nav>
 
     <section class="Homepage">
         <div class="container">
             <div class="shopping">
                 <h1>Your Cart</h1>
-               
+                <div id="cartItems" class="shopping-description">
+                </div>
+                <p class="cart-total">Total: $<span id="totalPrice">0.00</span></p>
             </div>
-    
-            <form action="process_checkout.php" method="post">
-                <h2>Billing Information</h2>
-                <div class="form-group">
-                    <label for="fullname">Full Name:</label>
-                    <input type="text" id="fullname" name="fullname" required>
-                </div>
-                <div class="form-group">
-                    <label for="address">Address:</label>
-                    <input type="text" id="address" name="address" required>
-                </div>
-                <div class="form-group">
-                    <label for="city">City:</label>
-                    <input type="text" id="city" name="city" required>
-                </div>
-                <div class="form-group">
-                    <label for="zip">ZIP / Postal Code:</label>
-                    <input type="text" id="zip" name="zip" required>
-                </div>
-    
-                <h2>Payment Information</h2>
-                <div class="form-group">
-                    <label for="cardname">Name on Card:</label>
-                    <input type="text" id="cardname" name="cardname" required>
-                </div>
-                <div class="form-group">
-                    <label for="cardnumber">Credit Card Number:</label>
-                    <input type="text" id="cardnumber" name="cardnumber" required>
-                </div>
-                <div class="form-group">
-                    <label for="expmonth">Exp Month:</label>
-                    <input type="text" id="expmonth" name="expmonth" required>
-                </div>
-                <div class="form-group">
-                    <label for="expyear">Exp Year:</label>
-                    <input type="text" id="expyear" name="expyear" required>
-                </div>
-                <div class="form-group">
-                    <label for="cvv">CVV:</label>
-                    <input type="text" id="cvv" name="cvv" required>
-                </div>
-    
-                <input type="submit" value="Checkout">
-            </form>
+            <input type="submit" value="Checkout" onclick="checkout()">
+
         </div>
     </section>
     
@@ -307,6 +282,49 @@
             <p>&copy; 2023 JAMS Travel Agency</p>
         </div>
     </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            showCartItems();
+        });
+
+        function showCartItems() {
+            var cart = JSON.parse(localStorage.getItem('cart')) || [];
+            var cartItemsContainer = document.getElementById('cartItems');
+            var totalPriceElement = document.getElementById('totalPrice');
+            var total = 0;
+
+            // Clear the container before displaying updated items
+            cartItemsContainer.innerHTML = '';
+
+            // Display each item in the cart
+            cart.forEach(function (item) {
+                var itemElement = document.createElement('div');
+                itemElement.className = 'cart-item';
+                itemElement.innerHTML = `
+                    <p><strong>${item.title}</strong></p>
+                    <p>${item.description}</p>
+                    <p>Price: $${item.price.toFixed(2)}</p>
+                    <hr>
+                `;
+                cartItemsContainer.appendChild(itemElement);
+
+                // Add the item price to the total
+                total += item.price;
+            });
+
+            // Display the total price
+            totalPriceElement.textContent = total.toFixed(2);
+        }
+
+        function checkout() {
+            // You can implement the checkout logic here
+            // For now, let's clear the cart as a simple example
+            localStorage.removeItem('cart');
+            alert('Checkout successful! Cart cleared.');
+            showCartItems(); // Update the displayed cart items
+        }
+    </script>
 </body>
 
 </html>
