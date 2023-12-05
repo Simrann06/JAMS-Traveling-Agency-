@@ -39,13 +39,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             ];
             $_SESSION["signup_data"] = $signupData;
 
-            header("Location: ../index.php");
+            header("Location: ../signup.php");
             die();
         }
 
         create_user($pdo, $pwd, $username, $email);
 
-        header("Location: ../HomePage2.php?signup=success");
+        header("Location: ../signup.php?signup=success");
 
         $pdo = null;
         $stmt = null;
@@ -55,6 +55,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         die("Query failed: " . $e->getMessage());
     }
 } else {
-    header("Location: ../index.php");
+    header("Location: ../signup.php");
     die();
 }

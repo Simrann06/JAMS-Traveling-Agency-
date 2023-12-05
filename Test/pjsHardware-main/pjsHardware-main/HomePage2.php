@@ -239,9 +239,7 @@ require_once 'includes/signup_view.inc.php';
                 <h1>JAMS Travel Agency</h1>
                 <h4>Your Spooky Travel Destination</h4>
             </div>
-            <div class="account">
-                <a href="signup.php" class="account-link"><img src="AccountLogo.png" alt="Account"></a>
-            </div>
+            
         </nav>
     </header>
 

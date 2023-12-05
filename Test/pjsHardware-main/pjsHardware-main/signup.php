@@ -1,3 +1,9 @@
+<?php
+require_once 'includes/config_session.inc.php';
+require_once 'includes/signup_view.inc.php';
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -177,9 +183,6 @@
                 <h1>JAMS Travel Agency</h1>
                 <h4>Your Spooky Travel Destination</h4>
             </div>
-            <div class="account">
-                <a href="customerLogin.html" class="account-link"><img src="AccountLogo.png" alt="Account"></a>
-            </div>
         </nav>
     </header>
 
@@ -227,30 +230,32 @@
 </head>
 
 <body>
-    <header>
-        <!-- Your header code here -->
-    </header>
-
-    <nav>
-        <!-- Your navigation links here -->
-    </nav>
-
     <section class="Homepage"> 
 
             <section class="signup-form">
                 <h2>Customer Portal</h2>
-                <form action ="includes/formhandler.inc.php" method = "post">
-                    <input type ="text" name = "username" placeholder = "Username"><br><br>
-                    <input type ="password" name = "pwd" placeholder = "Password"><br><br>
-                    <input type ="text" name = "email" placeholder = "E-Mail"><br><br>
-                   <!-- <input type="password" id="password" name="password" required><br> -->
-    
+                <form action="includes/signup.inc.php" method="post">
+                    <?php
+                    signup_inputs();
+                    ?>
                     <button>Signup</button>
-    
-                    <!--<a href = "signup.html">Click to Signup</a><br><br> -->
-                </form>
-            </section>
+                 </form>
+                 <?php
+                 check_signup_errors();
+                 ?>
 
+            </section>
+            <section class="signup-form">
+                <h3>Login</h3>
+
+                <form action="includes/login.inc.php" method="post">
+                    <input type="text" name="username" placeholder="Username">
+                    <input type="password" name="pwd" placeholder="Password">
+                    <button>Login</button>
+                </form>
+                <?php
+                    check_login_errors();
+                    ?>
             
         </section>
 
