@@ -238,14 +238,24 @@
     <section class="Homepage"> 
 
             <section class="signup-form">
-                <h2>Customer Portal</h2>
-                <form action ="includes/formhandler.inc.php" method = "post">
+                <h2>Change Account</h2>
+                <form action ="includes/userupdate.inc.php" method = "post">
                     <input type ="text" name = "username" placeholder = "Username"><br><br>
                     <input type ="password" name = "pwd" placeholder = "Password"><br><br>
                     <input type ="text" name = "email" placeholder = "E-Mail"><br><br>
                    <!-- <input type="password" id="password" name="password" required><br> -->
     
-                    <button>Signup</button>
+                    <button>Update</button>
+    
+                    <!--<a href = "signup.html">Click to Signup</a><br><br> -->
+                </form>
+
+                <form action ="includes/userdelete.inc.php" method = "post">
+                    <input type ="text" name = "username" placeholder = "Username"><br><br>
+                    <input type ="password" name = "pwd" placeholder = "Password"><br><br>
+                   <!-- <input type="password" id="password" name="password" required><br> -->
+    
+                    <button>Delete</button>
     
                     <!--<a href = "signup.html">Click to Signup</a><br><br> -->
                 </form>

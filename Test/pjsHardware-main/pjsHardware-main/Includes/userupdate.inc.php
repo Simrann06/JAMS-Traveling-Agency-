@@ -8,8 +8,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     try {
         require_once "dbh.inc.php";
 
-        $query = "INSERT INTO users (username, pwd, email) VALUES
-        (:username, :pwd, :email);";
+        $query = "UPDATE users SET username = :username , pwd =
+         :pwd , email = :email WHERE id = 2;";
 
         // Prepare the statement
         $stmt = $pdo->prepare($query);
