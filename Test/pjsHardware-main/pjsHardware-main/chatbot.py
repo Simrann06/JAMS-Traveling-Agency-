@@ -16,7 +16,7 @@ os.environ["OPENAI_API_KEY"] = constants.APIKEY
 persist = False
 Question = None
 
-loader = DirectoryLoader(r"C:\Users\siimr\Desktop\JAMS\JAMS-Traveling-Agency-\Test\pjsHardware-main\pjsHardware-main\data")
+loader = DirectoryLoader(r"/Applications/XAMPP/xamppfiles/htdocs/540 Project/JAMS-Traveling-Agency-/Test/pjsHardware-main/pjsHardware-main/data")
 
 if persist:
     index = VectorstoreIndexCreator(vectorstore_kwargs={"persist_directory": "persist"}).from_loaders([loader])
