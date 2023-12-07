@@ -186,12 +186,6 @@ require_once 'includes/signup_view.inc.php';
         </nav>
     </header>
 
-    <nav>
-        <a href="HomePage2.html">Home</a>
-        <a href="packages.html">Packages</a>
-        <a href="cart.html">Shopping Cart</a>
-        <a href="http://127.0.0.1:7860">ChatBot Helper</a>
-    </nav>
 
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
